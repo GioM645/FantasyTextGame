@@ -1,9 +1,12 @@
-import java.util.Scanner;
-
 //-------------------------------
 //Text Based Fantasy Game
 //Designed and coded by: Gio M
+//@GioM645 on GitHub
+//@girastuff on TikTok
 //-------------------------------
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[]args){
 
@@ -23,6 +26,14 @@ public class Main {
         //Setup & Logistics
         //DO NOT ALTER game will not function if altered
         Scanner scan = new Scanner(System.in);
+        //The number inside the stat assigner can be changed to alter your roll modifier limits
+        StatAssigner playerStats = new StatAssigner(4);
+        Dice rollDice = new Dice();
+        System.out.println("Your strength stat bonus is: " + playerStats.getStr());
+        System.out.println("Your agility stat bonus is: " + playerStats.getAgi());
+        System.out.println("Your charisma stat bonus is: " + playerStats.getChr());
+        System.out.println("Your intelligence stat bonus is: " + playerStats.getSmrt());
+
 
 
         //Main Game
@@ -52,7 +63,7 @@ public class Main {
 
 
         System.out.println("Restalt: We don't have much time, we are being being invaded by an army, a powerful army.");
-        System.out.println("Restalt: We need you to help, only the innate magic essence of a summoned being call help us.");
+        System.out.println("Restalt: We need you to help, only the innate magic essence of a summoned being can help us.");
         System.out.println("Restalt: Will you help us?");
         System.out.println("Enter yes or no: ");
         String helpChoice = "";
@@ -62,9 +73,24 @@ public class Main {
         if(helpChoice.equalsIgnoreCase("no")){
             System.out.println("Restalt: Ah, I see, I suppose I'll have to find someone else...");
             System.exit(0);
+        }else{
+            System.out.println("Restalt: I'll just take that as a yes...");
         }
 
+        System.out.println("\n");
 
-        
+        System.out.println("Restalt: Okay, I am going to send you to their waypoint temple, its how they are bringing their troops to this realm.");
+        System.out.println("Restalt: Good luck, I'll be in contact once you arrive!");
+        System.out.println("Your vision becomes bright, before a large stone structure appears in your vision.");
+        System.out.println("Restalt: Glad to see that you made it!");
+        System.out.println("Restalt: Listen I can't talk long, not after I was weakened by... uh... never mind that.");
+        System.out.println("Restalt: You'll need to get to the center of the summoning grounds and destroy their transport nexus, good luck.");
+        System.out.println("You walk to the base of the spire, you see three guards, they look humanoid but with tails and horns.");
+        System.out.println("You see three potential methods to get pass.");
+        System.out.println("Method 1: You see someone you believe to be a mercenary be allow in, you could convince them you're one too. (1 in 8 + CHR)");
+        System.out.println("Method 2: You wagons going in to bring supplies, you can try to sneak inside one. (1 in 8 + AGI)");
+        System.out.println("Method 3: Hit and run, the guards don't look tough, you can take them. (1 in 8 + STR)");
+
+
     }
 }

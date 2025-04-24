@@ -1,3 +1,11 @@
+//------------------------------------------------------------------------------------------------
+//Dice.java
+//Class designed for digital dice rolls, useful template for text based game with RNG components
+//Coded by Gio M
+//@GioM645 on GitHub
+//@girastuff on TikTok
+//------------------------------------------------------------------------------------------------
+
 import java.util.Random;
 public class Dice {
 
@@ -5,6 +13,11 @@ public class Dice {
 
     public int roll_d20(){
         int result = rand.nextInt(1, 20);
+        return result;
+    }
+
+    public int roll_d12(){
+        int result = rand.nextInt(1, 12);
         return result;
     }
 
