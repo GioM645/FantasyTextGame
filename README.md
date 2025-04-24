@@ -1,5 +1,5 @@
 Text game includes labeling for values that can be changed without compromising game integrity
-~GAME IS IN EXTREMELY EARLY BUILD STATE~
+GAME IS IN EXTREMELY EARLY BUILD STATE
 
 Dice class is currently unused but will be used for combat scenarios and other luck based scenarios
 Dice class includes functions for dice sizes 20, 12, 8, 6, 4 and 2
